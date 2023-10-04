@@ -1,13 +1,240 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  margin:0px;
+  padding: 0px;
+  border: 0px;
+  overflow-x: hidden;
+  background-color: rgba(137, 195, 218, 0.178);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  position: relative;
+  height:6vh;
+  width: 78%;
+  margin: auto;
+  border-radius:8px;  
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  box-shadow: 1px 2px 10px rgba(31, 48, 54, 0.137);
+  z-index: 10;
+  background-color: #EAF4F8;
+  padding:0px 3vw;
+}
+
+.navbar p{
+  /* border: 1px solid; */
+  margin-left: 10px;
+  font-size:12px;
+  position: relative;
+  top: 0.5vw
+}
+
+.navbar button{
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  background-color: rgb(3, 134, 241);
+  color: white;
+  font-weight: 600;
+  padding: 2px 10px;
+}
+
+.navbar input{
+  width: 20vw;
+  height:25px;
+  padding-top:1px;
+  padding-left:1vw;
+}
+
+.Card{
+  width: 24vw;
+  margin:1.2vw;
+  /* border: 1px solid; */
+  height: 55vh;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.247);
+}
+
+.CardImg{
+  width:100%;
+  height:30vh;
+  overflow: hidden;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;  
+}
+
+.dashBoard{
+  /* border: 1px solid; */
+  /* height: 85vh; */
+  margin-top: 15vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.name{
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0.5vw;
+}
+
+.name button{
+  color: black;
+  border:1px solid grey;
+  font-size: 1vw;
+  padding: 0vw 0.4vw;
+}
+
+.name p{
+  position: relative;
+  top: 5px;
+  font-weight: 500;
+}
+
+.box4{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-top: -5px;
+  margin-left:0.6vw;
+}
+
+.box4 div{
+  width: 50%;
+  /* border: 1px solid; */
+  display: flex;
+  height: 4vh;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.Card hr{
+  margin-top: 4px;
+}
+
+.cardLast{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0.7vw;
+}
+
+.cardLast p{
+  font-size: 1.5vw;
+}
+
+.cardLast p span{
+  font-size: 1vw;
+}
+
+.cardLast div{
+  display: flex;
+}
+
+#heart{
+  /* border:1px solid; */
+  height:25px;
+  width: 25px;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 132, 255, 0.288);
+  color: rgb(4, 86, 141);
+  border-radius:5px;
+  margin-right: 10px;
+}
+
+#rate{
+  border: 1px solid;
+  height: 25px;
+  background-color: rgb(3, 134, 241);
+  color: white;
+  border-radius: 5px;
+  font-size:12px;
+  text-align: center;
+  justify-content: center;
+  padding: 1px 4px 0px 4px;
+}
+
+.box4 i{
+  margin-right: 5px;
+}
+
+.bottom{
+  /* border: 1px solid;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  padding: 10px; */
+
+}
+
+.pageC{
+  width: 78%;
+  margin: auto;
+  /* border: 1px solid; */
+  height: 48px;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  border-radius:5px;
+  justify-content: end;
+  padding:0px 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 8px 20px rgba(128, 128, 128, 0.39);
+}
+
+.pageC a {
+  /* border: 1px solid; */
+  padding:5px 10px;
+  margin: 4px;
+  position: relative;
+  top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.381);
+}
+
+.pageC a:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 1px transparent;
+}
+
+
+.addCar{
+  /* border: 1px solid; */
+  margin: auto;
+  margin-top: 10vh;
+  width:74%;
+  height: 80vh;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.336);
+  border-radius: 4px;
+}
+
+.addCar form{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.addCar form input{
+  margin: 10px;
+  width: 80%;
+}
+
+.addCar form button{
+  width: 80%;
+  margin: 10px;
+  background-color: rgb(3, 134, 241);
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 2px 0px;
 }
