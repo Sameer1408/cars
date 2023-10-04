@@ -29,7 +29,7 @@ function AddCar({ setSearch, search }) {
     formData.append("year", year);
     console.log(formData);
     const result = await axios.post(
-      "http://localhost:4000/uploadImage",
+      "https://intern-mnab.onrender.com/uploadImage",
       formData,
       {
         headers: { "Content-Type": "multipart/form-data" }
